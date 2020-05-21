@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#root {
+  /* background-color: #445942; */
+}
+
+h1 {
+  /* border: 1px dashed black; */
+}
+
+.App {
+  padding: 1%;
+}
+
+.wrapper {
+  margin: 0% 5%;
+  /* background-color: 	#b32230; */
+  border-radius: 5px;
+
+}
+
+.teamMember .card {
+  flex-direction: row;
+  align-items: center;
+  margin: 1% 2%;
+}
+
+.App .teamMember .card {
+  /* background-color:	#c3d3b2; */
+}
+
+.App .teamMember .card .userImg {
+  margin: 2%;
+  width: 150px;
+}
+
+.wrapper .form .inputs {
+  /* border: 1px solid black; */
+}
