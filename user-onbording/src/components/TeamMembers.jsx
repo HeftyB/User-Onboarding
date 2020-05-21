@@ -10,14 +10,22 @@ export default function TeamMembers(props) {
         return (
             <div className="teamMember" key={item.id}>
                 <Card>
-                <CardImg className="userImg" top width="10%" src={item.avatar} alt={`Img of ${item.name} has failed to load.....`} />
+                <CardImg 
+                    className="userImg" 
+                    top width="10%" 
+                    src={item.avatar} 
+                    alt={`Img of ${item.name} has failed to load.....`} 
+                />
                 <CardBody>
-                    <CardTitle>Name: {item.first_name} {item.last_name}</CardTitle>
-                    <CardSubtitle>Role: {!item.role?`No Role Selected`:item.role}</CardSubtitle>
-                    <CardText>Email: {item.email}</CardText>
-                    {/* <Button 
-                    // git clickevent callback to direct user to git
-                    >User's Git</Button> */}
+                    <CardTitle>
+                        Name: {item.first_name} {item.last_name}
+                    </CardTitle>
+                    <CardSubtitle>
+                        Role: {!item.role?`No Role Selected`:item.role}
+                    </CardSubtitle>
+                    <CardText>
+                        Email: {item.email}
+                        </CardText>
                 </CardBody>
                 </Card>
             </div>
