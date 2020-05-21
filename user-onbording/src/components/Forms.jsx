@@ -18,8 +18,8 @@ export default function Forms(props) {
         <div className="form-group submit">
         <h3>Add A New User</h3>
         </div>
-        <div className='errors'>
-          <div>{errors.username}</div>
+        <div className="errors">
+          <div>{errors.name}</div>
           <div>{errors.email}</div>
           <div>{errors.role}</div>
           <div>{errors.civil}</div>

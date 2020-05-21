@@ -47,11 +47,11 @@ describe("Form inputs", () => {
   describe("Form validation", () => {
     it("validates name correctly", () => {
       cy.visit("http://localhost:3000")
-      cy.contains("Name required").should("not.exist")
+      cy.contains("Your name must be at least two characters long").should("not.exist")
       cy.get('input[name="name"]').type("a")
-      cy.contains("Name required")
+      cy.contains("Your name must be at least two characters long")
       cy.get('input[name="name"]').type("b")
-      cy.contains("Name required").should("not.exist")
+      cy.contains("Your name must be at least two characters long").should("not.exist")
     })
   })
   

@@ -105,10 +105,10 @@ function App() {
           ...formErrors,
           [name]: ""})
       })
-      .catch(err => {
+      .catch(error => {
         setFormErrors({
           ...formErrors,
-          [name]: err.errors[0]
+          [name]: error.errors[0]
         })
       })
 
